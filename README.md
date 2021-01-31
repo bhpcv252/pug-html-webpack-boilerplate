@@ -1,4 +1,4 @@
-# Webpack Boilerplate
+# Pug/HTML Webpack Boilerplate
 
 ## Install Dependencies
 
