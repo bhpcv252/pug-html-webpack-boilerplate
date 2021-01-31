@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../../assets/fonts/Inter.ttf');
+}
+
+$font-size: 1rem;
+$font-family: 'Inter', sans-serif;
+$background-color: #121212;
+$font-color: #dae0e0;
+
+html {
+  font-size: $font-size;
+  font-family: $font-family;
+  background: $background-color;
+  color: $font-color;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+}
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+}
+
+h1 {
+  margin: auto;
+  text-align: center;
+  max-width: 90vw;
+}
+
+.bg-test {
+  background-image: url('../../assets/images/example.jpg');
+  width: 200px;
+  height: 200px;
+}
