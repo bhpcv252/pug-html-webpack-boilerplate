@@ -4,6 +4,9 @@ module.exports = {
   // Assets folder
   assets: path.resolve(__dirname, '../src/assets'),
 
+  // Global scripts and styles folder
+  global: path.resolve(__dirname, '../src/global'),
+
   // Components folder
   components: path.resolve(__dirname, '../src/components'),
 

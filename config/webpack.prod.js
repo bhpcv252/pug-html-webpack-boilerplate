@@ -1,7 +1,7 @@
 const defaults = require('./defaults')
 const paths = require('./paths')
 const { merge } = require('webpack-merge')
-const common = require('./webpack.common.js')
+const common = require('../webpack.config.js')
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
@@ -71,7 +71,7 @@ module.exports = merge(common, {
       },
     },
     runtimeChunk: {
-      name: 'runtime',
+      name: entrypoint => `runtime-${entrypoint.name}`,
     },
   },
   performance: {

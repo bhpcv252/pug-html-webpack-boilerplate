@@ -1,7 +1,7 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const defaults = require('./defaults')
-const paths = require('./paths')
-const utils = require('./utils')
+const defaults = require('./config/defaults')
+const paths = require('./config/paths')
+const utils = require('./config/utils')
 
 module.exports = {
   // Entry points
@@ -159,8 +159,12 @@ module.exports = {
   // Resolve alias
   resolve: {
     alias: {
-      '@': paths.src,
+      Source: paths.src,
+      Assets: paths.assets,
+      Components: paths.components,
+      Pages: paths.pages,
+      Global: paths.global
     },
-    extensions: ['*', '.js', '.json'],
+    extensions: ['*', '.js', '.jsx', '.json'],
   },
 }
