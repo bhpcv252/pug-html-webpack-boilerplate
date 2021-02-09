@@ -27,7 +27,7 @@ module.exports = merge(common, {
           {
             loader: 'css-loader',
             options: {
-              importLoaders: 2
+              importLoaders: 2,
             },
           },
           'postcss-loader',
@@ -36,9 +36,9 @@ module.exports = merge(common, {
             options: {
               sassOptions: {
                 minimize: defaults.minify,
-                outputStyle: defaults.minify ? 'compressed' : 'expanded'
+                outputStyle: defaults.minify ? 'compressed' : 'expanded',
               },
-            }
+            },
           },
         ],
       },
@@ -55,7 +55,7 @@ module.exports = merge(common, {
 
   optimization: {
     minimize: defaults.minify,
-    minimizer: [new CssMinimizerPlugin(), "..."],
+    minimizer: [new CssMinimizerPlugin(), '...'],
     splitChunks: {
       cacheGroups: {
         vendor: {
@@ -68,7 +68,7 @@ module.exports = merge(common, {
           name: 'global',
           chunks: 'all',
         },
-      }
+      },
     },
     runtimeChunk: {
       name: 'runtime',

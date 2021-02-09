@@ -4,9 +4,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const defaults = require('./defaults')
 const paths = require('./paths')
 
-const ROUTES_PATH = paths.pages;
-const routesArray = fs.readdirSync(ROUTES_PATH);
-const markupFile = defaults.templating ? 'pug' : 'html';
+const ROUTES_PATH = paths.pages
+const routesArray = fs.readdirSync(ROUTES_PATH)
+const markupFile = defaults.templating ? 'pug' : 'html'
 
 // Get Entry Points
 exports.getEntry = function () {

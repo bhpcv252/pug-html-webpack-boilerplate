@@ -89,11 +89,11 @@ module.exports = {
       {
         test: /\.(pug|jade)$/,
         use: {
-          loader:  'pug-loader',
+          loader: 'pug-loader',
           options: {
             root: paths.src,
-            pretty: !(defaults.minify)
-          }
+            pretty: !defaults.minify,
+          },
         },
       },
       {

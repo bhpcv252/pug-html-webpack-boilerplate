@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
-  "author": "DigiBlankCanvas",
+  "author": "bhpcv252",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
     "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}",
     "prettier-all": "prettier --write --ignore-unknown \"**/*\"",
-    "create-page": "node config/create-page.js"
+    "create": "node config/create.js"
   },
   "devDependencies": {
     "@babel/core": "^7.12.1",

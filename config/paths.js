@@ -4,6 +4,9 @@ module.exports = {
   // Assets folder
   assets: path.resolve(__dirname, '../src/assets'),
 
+  // Components folder
+  components: path.resolve(__dirname, '../src/components'),
+
   // Pages folder
   pages: path.resolve(__dirname, '../src/pages'),
 

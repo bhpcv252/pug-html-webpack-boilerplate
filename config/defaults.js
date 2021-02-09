@@ -4,5 +4,5 @@ module.exports = {
   templating: true,
 
   // Minify production files
-  minify: true
+  minify: true,
 }
