@@ -93,6 +93,7 @@ module.exports = {
           options: {
             root: paths.src,
             pretty: !defaults.minify,
+            self: true
           },
         },
       },

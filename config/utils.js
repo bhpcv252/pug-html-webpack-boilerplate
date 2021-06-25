@@ -38,6 +38,8 @@ exports.getHtml = function () {
 
     let chunks = ['runtime']
 
+    let pageData = {};
+
     if (fs.existsSync(paths.pages + `/${item}/.skippage`)) continue
 
     if (fs.existsSync(paths.pages + `/${item}/.entry.json`)) {
@@ -62,7 +64,7 @@ exports.getHtml = function () {
         template: paths.pages + `/${item}/${item}.${markupFile}`,
         inject: true,
         chunks: chunks,
-        minify: defaults.minify,
+        minify: defaults.minify
       })
     )
   }
