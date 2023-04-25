@@ -1,5 +1,14 @@
 # Pug/HTML Webpack Boilerplate
 
+## Switch to Node v14.15.0
+
+Node v14.15.0 is needed to run the project. Use the following command to install and use it (nvm needed):
+
+```bash
+nvm install 14.15.0
+nvm use 14.15.0
+```
+
 ## Install Dependencies
 
 Be sure to install dependencies before running the project. Use the following command to install them:
